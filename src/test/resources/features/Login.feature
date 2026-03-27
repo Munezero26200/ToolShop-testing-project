@@ -12,7 +12,7 @@ Feature: Login functionality
 
     Examples:
 
-      | email             | password     |
-      | tester9@gmail.com | Headphone12@ |
+      | email               | password   |
+      | tester111@gmail.com | PoliceAm1@ |
 
 
