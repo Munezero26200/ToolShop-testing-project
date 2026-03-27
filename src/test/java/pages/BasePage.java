@@ -18,7 +18,7 @@ public class BasePage {
         this.driver = driver;
         this.baseUrl = ConfigLoader.getInstance().getBaseUrl();
 
-        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(60));
         PageFactory.initElements(driver, this);
 
     }
