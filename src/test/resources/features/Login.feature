@@ -13,6 +13,8 @@ Feature: Login functionality
     Examples:
 
       | email               | password   |
-      | tester111@gmail.com | PoliceAm1@ |
+      | testing@gmail.com | WELLwell@1|
 
 
+#
+#
