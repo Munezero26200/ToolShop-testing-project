@@ -12,8 +12,8 @@ Feature: Login functionality
 
     Examples:
 
-      | email            | password  |
-      | testng@gmail.com | Gasabo12! |
+      | email           | password |
+      | junit@gmail.com | Irondo1@ |
 
 
 #
