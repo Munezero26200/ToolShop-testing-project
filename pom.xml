@@ -42,9 +42,10 @@
     </dependencies>
     <build>
         <plugins>
+
             <plugin>
                 <groupId>net.masterthought</groupId>
-                <artifactId>cucumber-reporting</artifactId>
+                <artifactId>maven-cucumber-reporting</artifactId>
                 <version>5.7.0</version>
                 <executions>
                     <execution>
@@ -61,14 +62,15 @@
                     </execution>
                 </executions>
             </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.2.5</version>
             </plugin>
+
         </plugins>
     </build>
-
 
 
 
