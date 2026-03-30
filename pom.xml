@@ -42,7 +42,6 @@
     </dependencies>
     <build>
         <plugins>
-
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
@@ -57,20 +56,16 @@
                         <configuration>
                             <projectName>ToolShop Testing Project</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-report</outputDirectory>
-                            <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
+                            <jsonFiles>
+                                <param>${project.build.directory}/cucumber.json</param>
+                            </jsonFiles>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version>
-            </plugin>
-
         </plugins>
     </build>
+
 
 
 
