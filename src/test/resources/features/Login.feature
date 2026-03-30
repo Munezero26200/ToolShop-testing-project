@@ -13,7 +13,7 @@ Feature: Login functionality
     Examples:
 
       | email           | password |
-      | junit@gmail.com | Irondo1@ |
+      | unguka@gmail.com | Unguka1@ |
 
 
 #
