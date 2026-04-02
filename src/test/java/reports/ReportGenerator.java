@@ -17,7 +17,7 @@ public class ReportGenerator {
         List<String> jsonFiles = Collections.singletonList("target/cucumber.json");
 
         // Project name shown in the report
-        String projectName = "ToolShop-testing-Project";
+        String projectName = "TestSolutionsWebsite-Testing-project";
 
         // Configuration for the report
         Configuration configuration = new Configuration(reportOutputDirectory, projectName);

@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class BasePage {
-
     protected WebDriver driver;
     protected WebDriverWait wait;
     protected final String baseUrl;
@@ -18,7 +17,7 @@ public class BasePage {
         this.driver = driver;
         this.baseUrl = ConfigLoader.getInstance().getBaseUrl();
 
-        wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
         PageFactory.initElements(driver, this);
 
     }

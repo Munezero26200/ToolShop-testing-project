@@ -1,10 +1,10 @@
 package constants;
 
 public enum EndPoint {
-    ACCOUNT("account/");
+   ACCESSIBILITY("accessibility-testing/");
 
-    public final String url;
-    EndPoint(String url){
-        this.url = url;
-    }
+   public final String url;
+   EndPoint(String url){
+       this.url = url;
+   }
 }

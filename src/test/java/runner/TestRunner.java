@@ -5,10 +5,10 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = {"StepsDefinitions","customParameter", "DomainObj","hook"},
+        glue = {"StepsDefinitions","hook"},
         plugin = {"pretty",
-                "json:target/cucumber-report/cucumber.json",
-                "html:target/cucumber-report"}
+                "json:target/cucumber/report.json",
+                "html:target/cucumber/report.html"}
 )
 
 
