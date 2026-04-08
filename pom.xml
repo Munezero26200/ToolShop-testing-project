@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -15,11 +14,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>net.masterthought</groupId>
-            <artifactId>cucumber-reporting</artifactId>
-            <version>5.8.4</version>
-        </dependency>
         <!-- Selenium -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -45,8 +39,6 @@
             <artifactId>cucumber-testng</artifactId>
             <version>7.34.3</version>
         </dependency>
-
-        <!-- Cucumber Reporting (library, not plugin) -->
     </dependencies>
 
     <build>
@@ -62,32 +54,6 @@
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>net.masterthought</groupId>
-                <artifactId>maven-cucumber-reporting</artifactId>
-                <version>5.10.2</version>
-                <executions>
-                    <execution>
-                        <id>generate-cucumber-report</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <configuration>
-                            <projectName>ToolShop Testing Project</projectName>
-                            <outputDirectory>${project.build.directory}/cucumber-report</outputDirectory>
-                            <jsonFiles>
-                                <param>${project.build.directory}/cucumber.json</param>
-                            </jsonFiles>
-
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-
-
         </plugins>
     </build>
 </project>
-
-
