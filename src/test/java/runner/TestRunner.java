@@ -10,9 +10,10 @@ import org.testng.annotations.DataProvider;
         monochrome = true,
         plugin = {
                 "pretty",
-                "json:target/cucumber/report.json",
-                "html:target/cucumber/report.html"
+                "json:target/cucumber.json",
+                "html:target/cucumber-html-report"
         }
+
 
 )
 public class TestRunner extends AbstractTestNGCucumberTests {

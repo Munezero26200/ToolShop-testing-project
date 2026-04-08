@@ -77,8 +77,9 @@
                             <projectName>ToolShop Testing Project</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-report</outputDirectory>
                             <jsonFiles>
-                                <param>${project.build.directory}/cucumber/report.json</param>
+                                <param>${project.build.directory}/cucumber.json</param>
                             </jsonFiles>
+
                         </configuration>
                     </execution>
                 </executions>
